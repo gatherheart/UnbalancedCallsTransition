@@ -21,15 +21,15 @@ class VersionUpdateController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        let uiStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = uiStoryboard.instantiateViewController(identifier: "TabBarController")
-        self.view.window?.rootViewController = vc
-        self.view.window?.makeKeyAndVisible()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print(self, "viewDidAppear")
+        let uiStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = uiStoryboard.instantiateViewController(identifier: "TabBarController")
+        self.view.window?.rootViewController = vc
+        self.view.window?.makeKeyAndVisible()
     }
     
     override func viewDidDisappear(_ animated: Bool) {

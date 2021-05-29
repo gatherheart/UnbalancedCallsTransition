@@ -42,10 +42,6 @@ class ViewController: UIViewController {
         self.view.window?.rootViewController = vc
         self.view.window?.makeKeyAndVisible()
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToNext" {
-        }
-    }
+
 }
 
