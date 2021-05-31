@@ -38,7 +38,11 @@ class NextViewController: UIViewController {
     }
 
     @IBAction func tapBlueView(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        print("tap! blueView")
+        let uiStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = uiStoryboard.instantiateViewController(identifier: "ViewController")
+        self.view.window?.rootViewController = vc
+        self.view.window?.makeKeyAndVisible()
     }
     /*
     // MARK: - Navigation
